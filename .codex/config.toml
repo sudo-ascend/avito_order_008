@@ -1,0 +1,11 @@
+# Project-local safety boundary for the connected Figma MCP server.
+# Only read/export tools are enabled; every Figma canvas write tool is excluded.
+[mcp_servers.figma]
+enabled_tools = [
+  "get_metadata",
+  "get_design_context",
+  "get_screenshot",
+  "get_variable_defs",
+  "download_assets",
+]
+default_tools_approval_mode = "auto"

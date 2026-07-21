@@ -1,0 +1,234 @@
+.pricing {
+  position: relative;
+  isolation: isolate;
+  margin: 95px auto 100px;
+}
+
+.pricing[hidden] {
+  display: none;
+}
+
+.pricing > h2 {
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pricing:before,
+.pricing:after,
+.pricing-card:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pricing:before {
+  top: 94px;
+  left: -14px;
+  width: 10px;
+  height: 10px;
+  background: var(--blue);
+}
+
+.pricing:after {
+  left: -24px;
+  bottom: 96px;
+  width: 12px;
+  height: 12px;
+  background: var(--pink);
+}
+
+.pricing-card {
+  position: relative;
+  width: 680px;
+  margin: 72px auto 0;
+  padding: 44px 60px 38px;
+  border-radius: 28px;
+  overflow: visible;
+  background: var(--pink);
+  color: #fff;
+  isolation: isolate;
+}
+
+.pricing-card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    73deg,
+    transparent 40%,
+    #ff71d83d 40.5% 48%,
+    transparent 48.5%
+  );
+}
+
+.pricing-card:after {
+  right: -124px;
+  bottom: 118px;
+  width: 14px;
+  height: 14px;
+  background: var(--pink);
+}
+
+.pricing-card h3 {
+  margin: 0 -60px 32px;
+  padding-bottom: 32px;
+  border-bottom: 3px solid #fff;
+  font: 700 36px Unbounded, Manrope, sans-serif;
+  text-align: center;
+}
+
+.pricing-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.pricing-card li {
+  position: relative;
+  padding-left: 27px;
+}
+
+.pricing-card li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 12px;
+  height: 12px;
+  border: 4px solid var(--blue);
+  border-radius: 50%;
+}
+
+.price-bubble {
+  position: absolute;
+  top: 166px;
+  right: -98px;
+  width: 196px;
+  height: 196px;
+  padding: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--blue);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.prices {
+  display: grid;
+  gap: 13px;
+  margin: 44px 0 34px;
+}
+
+.prices p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.prices strong {
+  font: 700 33px Unbounded, Manrope, sans-serif;
+}
+
+.pricing-actions {
+  display: grid;
+  gap: 15px;
+}
+
+.pricing-actions button {
+  padding: 19px;
+  border-radius: 18px;
+  background: var(--blue);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.pricing-actions .outline-pay {
+  background: transparent;
+  border: 3px solid var(--blue);
+  color: #fff;
+}
+
+.pricing-actions .outline-pay:hover {
+  background: var(--blue);
+}
+
+@media (min-width: 801px) and (max-width: 1099px) {
+  .pricing:before {
+    top: 88px;
+    left: 6px;
+  }
+
+  .pricing:after {
+    left: 8px;
+    bottom: 72px;
+  }
+
+  .pricing-card:after {
+    right: -48px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing {
+    margin: 65px auto;
+  }
+
+  .pricing > h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .pricing:before,
+  .pricing:after,
+  .pricing-card:after {
+    display: none;
+  }
+
+  .pricing-card {
+    width: 100%;
+    margin-top: 38px;
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .pricing-card h3 {
+    margin: 0 -22px 25px;
+    padding-bottom: 24px;
+    font-size: 23px;
+  }
+
+  .pricing-card ul {
+    font-size: 11px;
+  }
+
+  .price-bubble {
+    position: static;
+    width: 152px;
+    height: 152px;
+    margin: 22px auto 0;
+    padding: 26px;
+    font-size: 13px;
+  }
+
+  .prices p {
+    font-size: 17px;
+  }
+
+  .prices strong {
+    font-size: 21px;
+  }
+
+  .pricing-actions button {
+    padding: 15px;
+    font-size: 12px;
+  }
+}

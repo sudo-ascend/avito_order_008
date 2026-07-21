@@ -1,0 +1,7 @@
+/* Final footer typography and alignment from the PDF. */
+#footer .consultation-photo{height:178px!important;top:-110px!important;right:-3px!important}.consultation h2,.footer-inner h3{font-family:Unbounded,Manrope,sans-serif!important;font-weight:700!important;letter-spacing:-.7px}.consultation h2{font-size:23px!important}.footer-contacts h3,.footer-social h3{font-size:13px!important}.footer-social{transform:translateY(-58px)}.footer-contacts a,.footer-social>a,.footer-inner small{font-weight:500}.footer-socials a{font-family:Manrope,Arial,sans-serif!important;font-weight:800!important}@media(max-width:800px){.footer-social{transform:none}}
+.footer-socials a{overflow:hidden!important;padding:8px!important;font-size:0!important;line-height:0!important}
+.footer-socials a img{display:block;width:100%;height:100%;object-fit:cover}
+.footer-socials .tiktok{background:#06115f!important}
+.footer-socials .telegram{background:#e500a4!important;padding:6px!important}
+.footer-socials .youtube{background:#252525!important}
