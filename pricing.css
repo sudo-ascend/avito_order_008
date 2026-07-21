@@ -142,11 +142,15 @@
   gap: 15px;
 }
 
-.pricing-actions button {
+.pricing-actions a {
+  display: block;
   padding: 19px;
   border-radius: 18px;
   background: var(--blue);
+  color: #fff;
   font-size: 18px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -227,7 +231,7 @@
     font-size: 21px;
   }
 
-  .pricing-actions button {
+  .pricing-actions a {
     padding: 15px;
     font-size: 12px;
   }
