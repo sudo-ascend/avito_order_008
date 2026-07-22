@@ -1,5 +1,0 @@
-/* Status-only stylesheet. This is not derived design CSS. */
-:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
-body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
-main { max-width: 42rem; padding: 2rem; }
-h1 { margin-top: 0; }

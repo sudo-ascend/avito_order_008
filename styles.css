@@ -553,3 +553,280 @@ body.menu-open{
     padding:7px;
   }
 }
+
+/* Coordinates measured from the supplied 1920 px PDF render. */
+@media(min-width:801px){
+  .shell{width:1080px;margin-left:auto;margin-right:auto}.header{height:100px}.header-inner{gap:25px}.logo span{width:37px;height:37px}.logo i{font-size:19px}.contacts{font-size:11px}.contacts small,.menu-label{font-size:10px}.outline-link{font-size:9px;padding:9px 14px}.social-links a{width:37px;height:37px}.side-nav{right:88px}
+  .hero{height:590px;padding-top:61px}.hero h1{font-size:39px}.hero-copy>p{font-size:13px;margin:22px 0 88px}.pink-btn{font-size:10px;padding:17px 60px}.hero-video{width:285px;font-size:10px;padding:9px 20px}.hero-video img{width:49px;height:49px}
+  .hero-person{height:590px;width:480px;right:0}.pink-disc{width:480px;height:480px;right:0;bottom:50px}.hero-person>img{height:680px;max-width:480px;right:0;bottom:50px}.metric{font-size:10px;padding:11px 15px}.m-one{right:-44px;top:112px}.m-two{right:-47px;bottom:92px}.hero-note{left:380px;bottom:225px;width:310px;padding:24px 27px;font-size:10px}.hero-note b{font-size:14px}
+  .hero.rings-left:before{left:-318px;bottom:-210px}.hero:after{left:-200px;top:0;right:auto;bottom:auto;width:1400px;height:590px;background:radial-gradient(circle at 92px 282px,var(--pink) 0 6px,transparent 7px),radial-gradient(circle at 663px 436px,#111 0 6px,transparent 7px),radial-gradient(circle at 809px 522px,var(--blue) 0 10px,transparent 11px);box-shadow:none;border:0}
+  .benefit-grid{gap:24px}.benefit{min-height:280px;padding:28px 31px;border-radius:18px}.benefit-icon{width:50px;height:50px;font-size:22px}.benefit h2{font-size:23px;margin:23px 0}.benefit ul{font-size:10px}
+  .about{grid-template-columns:390px 1fr;gap:135px;margin-top:95px}.about-photo{height:420px}.about-photo img{height:440px}.about-copy h2,.process h2,.reviews h2,.exams h2,.faq h2{font-size:29px}.about-copy h2{font-size:38px;line-height:1.18}.about-copy ul{font-size:14px;line-height:1.85;max-width:585px}.ticker{margin:57px 0}.process{padding-top:20px}.caption{font-size:10px}.steps{gap:42px;margin-top:45px}.steps i{width:58px;height:58px;font-size:27px}.steps h3{font-size:12px}.steps p{font-size:10px}
+  .reviews{margin-top:90px}.review-title{font-size:28px;margin:30px 0 17px}.review-grid{gap:28px}.review-grid article{min-height:270px;padding:24px}.review-grid img{width:49px;height:49px}.review-grid header b{font-size:15px}.review-grid p{font-size:11px;line-height:1.6}.rings-right:after{right:-316px;bottom:-28px}
+  .exams{margin-top:80px}.exams>div{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.exams article{height:160px;padding:15px 25px}.exams img{width:90px;height:100px}.exams b{font-size:40px}.faq{margin-top:70px;margin-bottom:105px}.faq-grid{width:724px;gap:12px 24px}.faq details{font-size:9px;padding:12px 14px}.footer-inner{grid-template-columns:250px 1fr 1fr;gap:100px}.consultation{min-height:225px;padding:70px 20px 20px}.consultation img{height:150px;top:-90px}.consultation h2{font-size:17px}
+}
+.hero.rings-left:after{left:-200px!important;top:0!important;right:auto!important;bottom:auto!important;width:1400px!important;height:590px!important;background:radial-gradient(circle at 92px 282px,var(--pink) 0 6px,transparent 7px),radial-gradient(circle at 663px 436px,#111 0 6px,transparent 7px),radial-gradient(circle at 809px 522px,var(--blue) 0 10px,transparent 11px)!important;box-shadow:none!important;border:0!important}
+
+/* Footer reconstructed from the final panel in the supplied PDF. */
+#footer{background:#fff!important;padding:72px 0 38px!important;overflow:hidden}.footer-ticker{margin:0!important}.footer-inner{position:relative!important;display:grid!important;grid-template-columns:342px 190px 290px!important;gap:92px!important;align-items:end!important;min-height:340px!important}.consultation{min-height:275px!important;border-radius:14px!important;padding:74px 27px 22px!important}.consultation img{height:166px!important;right:0!important;top:-104px!important}.consultation h2{font-size:22px!important;line-height:1.2}.consultation p{font-size:11px!important;line-height:1.45}.consultation .pink-btn{padding:11px 18px!important;font-size:8px!important}.footer-contacts,.footer-social{position:relative;z-index:2;padding-bottom:9px}.footer-inner h3{font-size:14px!important;margin:0 0 14px!important}.footer-inner a,.footer-inner small{font-size:11px!important;line-height:1.9!important}.footer-menu-title{margin-top:40px!important}.footer-socials{display:flex;gap:10px;margin:0 0 20px!important}.footer-socials a{display:grid;place-items:center;width:44px;height:44px;background:#24202f;border-radius:11px;color:#fff!important;font-size:22px!important;line-height:1!important}.footer-plane-wrap{position:relative!important;width:min(1120px,calc(100% - 36px))!important;height:340px!important;margin:-340px auto 0!important;pointer-events:none!important;z-index:1!important}.footer-plane{position:absolute;width:510px;height:auto;right:-292px;bottom:12px;opacity:.2;z-index:1}.footer-rings{position:absolute;width:220px;height:220px;left:-300px;bottom:4px;border:1px solid var(--line);border-radius:50%;box-shadow:0 0 0 56px #fff,0 0 0 57px var(--line),0 0 0 112px #fff,0 0 0 113px var(--line)}@media(max-width:800px){.footer-inner{grid-template-columns:1fr!important;gap:35px!important}.footer-plane-wrap,.footer-plane,.footer-rings{display:none}.footer-contacts,.footer-social{padding-left:10px}}
+.consultation{background:transparent!important;overflow:visible!important;isolation:isolate!important}
+.consultation:before{content:"";position:absolute;inset:0;background:var(--blue)!important;border-radius:28px 28px 18px 18px;clip-path:polygon(0 96px,8% 88px,18% 81px,31% 78px,45% 76px,56% 60px,68% 67px,81% 78px,92% 86px,100% 92px,100% 100%,0 100%);pointer-events:none;z-index:1}
+.consultation>*{position:relative;z-index:2}
+.consultation img{z-index:0!important}
+
+/* Keep the PDF footer in sync: the portrait is clipped, the card itself is not. */
+.consultation{background:var(--blue)!important;border-radius:26px 26px 14px 14px!important;overflow:visible!important;isolation:isolate!important}
+.consultation-photo{position:absolute!important;right:0!important;top:-104px!important;height:166px!important;aspect-ratio:212/318!important;z-index:3!important;pointer-events:none!important;clip-path:polygon(0 0,100% 0,100% 74%,95% 78%,88% 82%,79% 85%,69% 86%,58% 83%,48% 77%,39% 74%,30% 74%,20% 77%,10% 82%,0 85%)!important}
+.consultation-photo img{position:static!important;display:block!important;width:100%!important;height:100%!important;right:auto!important;top:auto!important;object-fit:contain!important;object-position:center top!important}
+.consultation:before{inset:auto!important;left:0!important;right:0!important;top:96px!important;bottom:auto!important;height:126px!important;background:var(--blue)!important;border-radius:26px 26px 0 0!important;clip-path:polygon(0 22%,8% 15%,18% 10%,31% 7%,45% 5%,56% 0,68% 6%,81% 16%,92% 23%,100% 29%,100% 100%,0 100%)!important;z-index:1!important}
+.consultation h2,.consultation p,.consultation .pink-btn{position:relative!important;z-index:4!important}
+
+/* Final footer typography and alignment from the PDF. */
+#footer .consultation-photo{height:178px!important;top:-110px!important;right:-3px!important}.consultation h2,.footer-inner h3{font-family:Unbounded,Manrope,sans-serif!important;font-weight:700!important;letter-spacing:-.7px}.consultation h2{font-size:23px!important}.footer-contacts h3,.footer-social h3{font-size:13px!important}.footer-social{transform:translateY(-58px)}.footer-contacts a,.footer-social>a,.footer-inner small{font-weight:500}.footer-socials a{font-family:Manrope,Arial,sans-serif!important;font-weight:800!important}@media(max-width:800px){.footer-social{transform:none}}
+.footer-socials a{overflow:hidden!important;padding:8px!important;font-size:0!important;line-height:0!important}
+.footer-socials a img{display:block;width:100%;height:100%;object-fit:cover}
+.footer-socials .tiktok{background:#06115f!important}
+.footer-socials .telegram{background:#e500a4!important;padding:6px!important}
+.footer-socials .youtube{background:#252525!important}
+
+/* Six large FAQ cards as shown in the PDF. */
+@media(min-width:801px){.faq-grid{width:1080px!important;gap:15px 38px!important}.faq details{min-height:94px!important;padding:19px 26px!important;font-size:12px!important;display:flex;align-items:center}.faq summary{width:100%;font-size:12px;line-height:1.5}.faq summary:after{width:42px!important;height:42px!important;font-size:32px!important;flex:0 0 42px;margin-left:18px}.faq details p{font-size:11px}.faq details[open]{display:block}.faq details[open] summary{padding-top:4px}}@media(max-width:800px){.faq details{min-height:72px}.faq summary:after{width:34px;height:34px;flex:0 0 34px}}
+
+.pricing {
+  position: relative;
+  isolation: isolate;
+  margin: 95px auto 100px;
+}
+
+.pricing[hidden] {
+  display: none;
+}
+
+.pricing > h2 {
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pricing:before,
+.pricing:after,
+.pricing-card:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pricing:before {
+  top: 94px;
+  left: -14px;
+  width: 10px;
+  height: 10px;
+  background: var(--blue);
+}
+
+.pricing:after {
+  left: -24px;
+  bottom: 96px;
+  width: 12px;
+  height: 12px;
+  background: var(--pink);
+}
+
+.pricing-card {
+  position: relative;
+  width: 680px;
+  margin: 72px auto 0;
+  padding: 44px 60px 38px;
+  border-radius: 28px;
+  overflow: visible;
+  background: var(--pink);
+  color: #fff;
+  isolation: isolate;
+}
+
+.pricing-card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    73deg,
+    transparent 40%,
+    #ff71d83d 40.5% 48%,
+    transparent 48.5%
+  );
+}
+
+.pricing-card:after {
+  right: -124px;
+  bottom: 118px;
+  width: 14px;
+  height: 14px;
+  background: var(--pink);
+}
+
+.pricing-card h3 {
+  margin: 0 -60px 32px;
+  padding-bottom: 32px;
+  border-bottom: 3px solid #fff;
+  font: 700 36px Unbounded, Manrope, sans-serif;
+  text-align: center;
+}
+
+.pricing-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.pricing-card li {
+  position: relative;
+  padding-left: 27px;
+}
+
+.pricing-card li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 12px;
+  height: 12px;
+  border: 4px solid var(--blue);
+  border-radius: 50%;
+}
+
+.price-bubble {
+  position: absolute;
+  top: 166px;
+  right: -98px;
+  width: 196px;
+  height: 196px;
+  padding: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: var(--blue);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.prices {
+  display: grid;
+  gap: 13px;
+  margin: 44px 0 34px;
+}
+
+.prices p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.prices strong {
+  font: 700 33px Unbounded, Manrope, sans-serif;
+}
+
+.pricing-actions {
+  display: grid;
+  gap: 15px;
+}
+
+.pricing-actions a {
+  display: block;
+  padding: 19px;
+  border-radius: 18px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pricing-actions .outline-pay {
+  background: transparent;
+  border: 3px solid var(--blue);
+  color: #fff;
+}
+
+.pricing-actions .outline-pay:hover {
+  background: var(--blue);
+}
+
+@media (min-width: 801px) and (max-width: 1099px) {
+  .pricing:before {
+    top: 88px;
+    left: 6px;
+  }
+
+  .pricing:after {
+    left: 8px;
+    bottom: 72px;
+  }
+
+  .pricing-card:after {
+    right: -48px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing {
+    margin: 65px auto;
+  }
+
+  .pricing > h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .pricing:before,
+  .pricing:after,
+  .pricing-card:after {
+    display: none;
+  }
+
+  .pricing-card {
+    width: 100%;
+    margin-top: 38px;
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .pricing-card h3 {
+    margin: 0 -22px 25px;
+    padding-bottom: 24px;
+    font-size: 23px;
+  }
+
+  .pricing-card ul {
+    font-size: 11px;
+  }
+
+  .price-bubble {
+    position: static;
+    width: 152px;
+    height: 152px;
+    margin: 22px auto 0;
+    padding: 26px;
+    font-size: 13px;
+  }
+
+  .prices p {
+    font-size: 17px;
+  }
+
+  .prices strong {
+    font-size: 21px;
+  }
+
+  .pricing-actions a {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
