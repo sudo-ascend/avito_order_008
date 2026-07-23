@@ -682,7 +682,8 @@ body.site-ready .site-loader{
 .consultation-photo{position:absolute!important;right:0!important;top:-104px!important;height:166px!important;aspect-ratio:212/318!important;z-index:3!important;pointer-events:none!important;clip-path:polygon(0 0,100% 0,100% 74%,95% 78%,88% 82%,79% 85%,69% 86%,58% 83%,48% 77%,39% 74%,30% 74%,20% 77%,10% 82%,0 85%)!important}
 .consultation-photo img{position:static!important;display:block!important;width:100%!important;height:100%!important;right:auto!important;top:auto!important;object-fit:contain!important;object-position:center top!important}
 .consultation:before{inset:auto!important;left:0!important;right:0!important;top:96px!important;bottom:auto!important;height:126px!important;background:var(--blue)!important;border-radius:26px 26px 0 0!important;clip-path:polygon(0 22%,8% 15%,18% 10%,31% 7%,45% 5%,56% 0,68% 6%,81% 16%,92% 23%,100% 29%,100% 100%,0 100%)!important;z-index:1!important}
-.consultation h2,.consultation p,.consultation .pink-btn{position:relative!important;z-index:4!important}
+.consultation:after{content:"";position:absolute;inset:43px 0 0;background:var(--blue);border-radius:0 0 14px 14px;pointer-events:none;z-index:4}
+.consultation h2,.consultation p,.consultation .pink-btn{position:relative!important;z-index:5!important}
 
 /* Final footer typography and alignment from the PDF. */
 #footer .consultation-photo{height:178px!important;top:-110px!important;right:-3px!important}.consultation h2,.footer-inner h3{font-family:Unbounded,Manrope,sans-serif!important;font-weight:700!important;letter-spacing:-.7px}.consultation h2{font-size:23px!important}.footer-contacts h3,.footer-social h3{font-size:13px!important}.footer-social{transform:translateY(-58px)}.footer-contacts a,.footer-social>a,.footer-inner small{font-weight:500}.footer-socials a{font-family:Manrope,Arial,sans-serif!important;font-weight:800!important}@media(max-width:800px){.footer-social{transform:none}}
@@ -861,35 +862,6 @@ body.site-ready .site-loader{
   background: var(--blue);
 }
 
-.pricing-short-options {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.pricing-short-options[hidden],
-.pricing-short-options a[hidden] {
-  display: none !important;
-}
-
-.pricing-short-options a {
-  display: grid;
-  min-height: 48px;
-  place-items: center;
-  border: 2px solid #fff;
-  border-radius: 14px;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.pricing-short-options a:hover {
-  background: #ffffff1f;
-}
-
 @media (min-width: 801px) and (max-width: 1099px) {
   .pricing:before {
     top: 88px;
@@ -962,10 +934,6 @@ body.site-ready .site-loader{
     font-size: 12px;
   }
 
-  .pricing-short-options a {
-    min-height: 44px;
-    font-size: 11px;
-  }
 }
 
 /* Final responsive layer. Loaded after the visual reference styles. */

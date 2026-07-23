@@ -5,18 +5,43 @@ const PRICING_TITLES = {
 
 const PRICING_PAYMENT_LINKS = {
   "ОГЭ": {
-    lessons36: "https://cationschool.online/pl/lite/widget/widget?id=1545022",
-    lessons12: "https://cationschool.online/pl/lite/widget/widget?id=1545020",
+    // Public checkout URL used by the supplied widget script (id=1632454).
+    lessons24: "https://cationschool.online/pl/lite/widget/widget?id=1632454",
+    // The supplied embed code for this widget points to payment widget 1632451.
+    lessons8: "https://cationschool.online/pl/lite/widget/widget?id=1632451",
   },
   "ЕГЭ": {
     lessons36: "https://cationschool.online/pl/lite/widget/widget?id=1632450",
     lessons12: "https://cationschool.online/pl/lite/widget/widget?id=1632447",
-    lessons24: "https://cationschool.online/pl/lite/widget/widget?id=1632454",
-    lessons8: "https://cationschool.online/pl/lite/widget/widget?id=1632451",
   },
 };
 
-const PRICING_CARD_TEMPLATE = `
+const PRICING_CARD_TEMPLATES = {
+  "ОГЭ": `
+  <article class="pricing-card">
+    <h3>МенделеевPro</h3>
+    <ul>
+      <li>Уроки 2 раза в неделю по 1,5 часа</li>
+      <li>Домашние задания с проверкой и разбором ошибок</li>
+      <li>Авторские рабочие тетради</li>
+      <li>Средняя цена часа занятия 490 ₽</li>
+      <li>Пробник каждый месяц</li>
+      <li>Учебный чат с оперативными ответами на вопросы</li>
+      <li>Личный учебный чат с Алексом</li>
+      <li>Чаты с мотивацией и поддержкой</li>
+    </ul>
+    <span class="price-bubble">Средняя цена<br>часа занятия<br>490 ₽</span>
+    <div class="prices">
+      <p><strong>16 500₽</strong> / 24 урока</p>
+      <p><strong>5890₽</strong> / 8 уроков</p>
+    </div>
+    <div class="pricing-actions">
+      <a class="pink-btn pricing-pay-link" data-payment-plan="lessons24" rel="noopener noreferrer">Оплатить 24 урока →</a>
+      <a class="pink-btn outline-pay pricing-pay-link" data-payment-plan="lessons8" rel="noopener noreferrer">Оплатить 8 уроков →</a>
+    </div>
+  </article>
+`,
+  "ЕГЭ": `
   <article class="pricing-card">
     <h3>МенделеевPro</h3>
     <ul>
@@ -34,15 +59,12 @@ const PRICING_CARD_TEMPLATE = `
       <p><strong>7890₽</strong> / 12 уроков</p>
     </div>
     <div class="pricing-actions">
-      <a class="pink-btn pricing-pay-link" data-payment-plan="lessons36" rel="noopener">Оплатить 36 уроков →</a>
-      <a class="pink-btn outline-pay pricing-pay-link" data-payment-plan="lessons12" rel="noopener">Оплатить 12 уроков →</a>
-    </div>
-    <div class="pricing-short-options" aria-label="Другие варианты оплаты">
-      <a class="pricing-pay-link" data-payment-plan="lessons24" rel="noopener">24 урока</a>
-      <a class="pricing-pay-link" data-payment-plan="lessons8" rel="noopener">8 уроков</a>
+      <a class="pink-btn pricing-pay-link" data-payment-plan="lessons36" rel="noopener noreferrer">Оплатить 36 уроков →</a>
+      <a class="pink-btn outline-pay pricing-pay-link" data-payment-plan="lessons12" rel="noopener noreferrer">Оплатить 12 уроков →</a>
     </div>
   </article>
-`;
+`,
+};
 
 function normalizeTickers() {
   const words = [
@@ -221,7 +243,10 @@ function renderPricing(selectedExam) {
   const paymentLinks =
     PRICING_PAYMENT_LINKS[selectedExam] || PRICING_PAYMENT_LINKS["ЕГЭ"];
 
-  pricing.innerHTML = `<h2>${title}</h2>${PRICING_CARD_TEMPLATE}`;
+  const cardTemplate =
+    PRICING_CARD_TEMPLATES[selectedExam] || PRICING_CARD_TEMPLATES["ЕГЭ"];
+
+  pricing.innerHTML = `<h2>${title}</h2>${cardTemplate}`;
   pricing.hidden = false;
   pricing.setAttribute("aria-hidden", "false");
 
@@ -247,10 +272,6 @@ function renderPricing(selectedExam) {
         event.preventDefault();
       }
     });
-  });
-
-  pricing.querySelectorAll(".pricing-short-options").forEach((options) => {
-    options.hidden = !options.querySelector(".pricing-pay-link:not([hidden])");
   });
 }
 
