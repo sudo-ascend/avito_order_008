@@ -5,7 +5,7 @@ const PRICING_TITLES = {
 
 const PRICING_PAYMENT_LINKS = {
   "ОГЭ": {
-    // Public checkout URL used by the supplied widget script (id=1632454)
+    // Public checkout URL used by the supplied widget script (id=1632454).
     lessons24: "https://cationschool.online/pl/lite/widget/widget?id=1632454",
     // The supplied embed code for this widget points to payment widget 1632451.
     lessons8: "https://cationschool.online/pl/lite/widget/widget?id=1632451",
